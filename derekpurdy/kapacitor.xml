@@ -32,7 +32,7 @@
   <Data>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/var/lib/chronograf</ContainerDir>
+      <ContainerDir>/var/lib/kapacitor</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
