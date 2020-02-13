@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/Data-Monkey/docker-templates/master/Data-Monkey/chronograf.xml</TemplateURL>
+	<TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/chronograf.xml</TemplateURL>
 <Beta>False</Beta>
 <Category>Tools:System</Category>
-<Date>2018-03-25</Date>
+<Date>2020-02-13</Date>
 <changes>
-    [center] [b]Data-Monkey:[/b] Netdata [/center]
-
 [center][font size=4]Change Log[/font][/center]
 
-[font size=3]2018.04.29[/font]
+[font size=3]2020.02.13[/font]
 - Initial release of the Chronograf template
-    
-    
   </changes>  
   <Name>Chronograf</Name>
-  <Support>https://lime-technology.com/forums/topic/71264-support-data-monkey-chronograf/</Support>
+  <Support></Support>
   <Description>Chronograf - Chronograf is the Complete Interface for the InfluxData Platform (including InfluxDB)</Description>
   <Project>https://www.influxdata.com/time-series-platform/chronograf/</Project>
   <Overview>Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the TICK stack to visualize your monitoring data and easily create alerting and automation rules.</Overview>
@@ -41,7 +37,7 @@
     </Volume>
   </Data>
 <WebUI>http://[IP]:[PORT:8888]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/Data-Monkey/docker-templates/master/Data-Monkey/img/chronograf.png</Icon>
+  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/chronograf.png</Icon>
 <DonateText></DonateText>
 <DonateLink></DonateLink>
 <DonateImg></DonateImg>

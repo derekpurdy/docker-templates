@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+	<TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/kapacitor.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Tools:System</Category>
+<Date>2020-02-13</Date>
+<changes>
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2020.02.13[/font]
+- Initial release of the Kapacitor template
+  </changes>  
+  <Name>Kapacitor</Name>
+  <Support></Support>
+  <Description>Kapacitor - Chronograf is the Complete Interface for the InfluxData Platform (including InfluxDB)</Description>
+  <Project>https://www.influxdata.com/time-series-platform/kapacitor/</Project>
+  <Overview>Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform. Kapacitor can process both stream and batch data from InfluxDB, acting on this data in real-time via its programming language TICKscript.</Overview>
+  <Registry>https://hub.docker.com/_/kapacitor/</Registry>
+  <Repository>kapacitor</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9092</HostPort>
+        <ContainerPort>9092</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>    
+    </Publish>
+ </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/lib/chronograf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI>http://[IP]:[PORT:9092]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/kapacitor.png</Icon>
+<DonateText></DonateText>
+<DonateLink></DonateLink>
+<DonateImg></DonateImg>
+<BaseImage></BaseImage>
+</Container>
