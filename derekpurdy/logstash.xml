@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/kapacitor.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/logstash.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Tools:System</Category>
   <Date>2020-02-13</Date>
@@ -12,9 +12,9 @@
   </changes> 
   <Name>Logstash</Name>
   <Support></Support>
-  <Description>Kapacitor - Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform.</Description>
-  <Project>https://www.influxdata.com/time-series-platform/kapacitor/</Project>
-  <Overview>Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform. Kapacitor can process both stream and batch data from InfluxDB, acting on this data in real-time via its programming language TICKscript.</Overview>
+  <Description>Logstash - Logstash is a tool for managing events and logs. When used generically, the term encompasses a larger system of log collection, processing, storage and searching activities.</Description>
+  <Project>https://www.elastic.co/logstash</Project>
+  <Overview>KLogstash is an open source, server-side data processing pipeline that ingests data from a multitude of sources simultaneously, transforms it, and then sends it to your favorite "stash."</Overview>
   <Repository>logstash-elastiflow:latest</Repository>
   <Registry/>
   <BindTime>true</BindTime>
