@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/kapacitor.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Tools:System</Category>
+  <Date>2020-02-13</Date>
+  <changes>
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2020.03.02[/font]
+- Initial release of the Logstash template
+  </changes> 
+  <Name>Logstash</Name>
+  <Support></Support>
+  <Description>Kapacitor - Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform.</Description>
+  <Project>https://www.influxdata.com/time-series-platform/kapacitor/</Project>
+  <Overview>Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform. Kapacitor can process both stream and batch data from InfluxDB, acting on this data in real-time via its programming language TICKscript.</Overview>
+  <Repository>logstash-elastiflow:latest</Repository>
+  <Registry/>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Icon>https://www.elastic.co/assets/blt946bc636d34a70eb/icon-logstash-bb.svg</Icon>
+  <ExtraParams/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/logstash/config/</HostDir>
+      <ContainerDir>/usr/share/logstash/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>http://elasticsearch7:9200 </Value>
+      <Name>XPACK_MONITORING_ELASTICSEARCH_HOSTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/elastiflow/definitions</Value>
+      <Name>ELASTIFLOW_DEFINITION_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/elastiflow/dictionaries</Value>
+      <Name>ELASTIFLOW_DICT_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/elastiflow/templates</Value>
+      <Name>ELASTIFLOW_TEMPLATE_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/elastiflow/geoipdbs</Value>
+      <Name>ELASTIFLOW_GEOIP_DB_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>elasticsearch7:9200</Value>
+      <Name>ELASTIFLOW_ES_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>ELASTIFLOW_RESOLVE_IP2HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.11</Value>
+      <Name>ELASTIFLOW_NAMESERVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>2055</Value>
+      <Name>ELASTIFLOW_NETFLOW_IPV4_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>6343</Value>
+      <Name>ELASTIFLOW_SFLOW_IPV4_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>4739</Value>
+      <Name>ELASTIFLOW_IPFIX_TCP_IPV4_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>__UNKNOWN</Value>
+      <Name>ELASTIFLOW_DEFAULT_APPID_SRCTYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>-Xms4g -Xmx4g</Value>
+      <Name>LS_JAVA_OPTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/synesis_lite_syslog/templates</Value>
+      <Name>SYNLITE_SYSLOG_TEMPLATE_PATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/usr/share/logstash/config/synesis_lite_syslog/patterns</Value>
+      <Name>SYNLITE_SYSLOG_GROK_PATTERNS_DIR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>elasticsearch7:9200</Value>
+      <Name>SYNLITE_SYSLOG_ES_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10514</Value>
+      <Name>SYNLITE_SYSLOG_UDP_IPV4_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10514</Value>
+      <Name>SYNLITE_SYSLOG_TCP_IPV4_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Key 1" Target="XPACK_MONITORING_ELASTICSEARCH_HOSTS" Default="" Mode="" Description="Container Variable: XPACK_MONITORING_ELASTICSEARCH_HOSTS" Type="Variable" Display="always" Required="false" Mask="false">http://elasticsearch7:9200 </Config>
+  <Config Name="Host Key 2" Target="ELASTIFLOW_DEFINITION_PATH" Default="" Mode="" Description="Container Variable: ELASTIFLOW_DEFINITION_PATH" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/elastiflow/definitions</Config>
+  <Config Name="Host Key 3" Target="ELASTIFLOW_DICT_PATH" Default="" Mode="" Description="Container Variable: ELASTIFLOW_DICT_PATH" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/elastiflow/dictionaries</Config>
+  <Config Name="Host Key 4" Target="ELASTIFLOW_TEMPLATE_PATH" Default="" Mode="" Description="Container Variable: ELASTIFLOW_TEMPLATE_PATH" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/elastiflow/templates</Config>
+  <Config Name="Host Key 5" Target="ELASTIFLOW_GEOIP_DB_PATH" Default="" Mode="" Description="Container Variable: ELASTIFLOW_GEOIP_DB_PATH" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/elastiflow/geoipdbs</Config>
+  <Config Name="Host Key 6" Target="ELASTIFLOW_ES_HOST" Default="" Mode="" Description="Container Variable: ELASTIFLOW_ES_HOST" Type="Variable" Display="always" Required="false" Mask="false">elasticsearch7:9200</Config>
+  <Config Name="Host Key 7" Target="ELASTIFLOW_RESOLVE_IP2HOST" Default="" Mode="" Description="Container Variable: ELASTIFLOW_RESOLVE_IP2HOST" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Host Key 8" Target="ELASTIFLOW_NAMESERVER" Default="" Mode="" Description="Container Variable: ELASTIFLOW_NAMESERVER" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.11</Config>
+  <Config Name="Host Key 9" Target="ELASTIFLOW_NETFLOW_IPV4_PORT" Default="" Mode="" Description="Container Variable: ELASTIFLOW_NETFLOW_IPV4_PORT" Type="Variable" Display="always" Required="false" Mask="false">2055</Config>
+  <Config Name="Host Key 10" Target="ELASTIFLOW_SFLOW_IPV4_PORT" Default="" Mode="" Description="Container Variable: ELASTIFLOW_SFLOW_IPV4_PORT" Type="Variable" Display="always" Required="false" Mask="false">6343</Config>
+  <Config Name="Host Key 11" Target="ELASTIFLOW_IPFIX_TCP_IPV4_PORT" Default="" Mode="" Description="Container Variable: ELASTIFLOW_IPFIX_TCP_IPV4_PORT" Type="Variable" Display="always" Required="false" Mask="false">4739</Config>
+  <Config Name="Host Key 12" Target="ELASTIFLOW_DEFAULT_APPID_SRCTYPE" Default="" Mode="" Description="Container Variable: ELASTIFLOW_DEFAULT_APPID_SRCTYPE" Type="Variable" Display="always" Required="false" Mask="false">__UNKNOWN</Config>
+  <Config Name="Host Key 13" Target="LS_JAVA_OPTS" Default="" Mode="" Description="Container Variable: LS_JAVA_OPTS" Type="Variable" Display="always" Required="false" Mask="false">-Xms4g -Xmx4g</Config>
+  <Config Name="Host Path 1" Target="/usr/share/logstash/config/" Default="" Mode="rw" Description="Container Path: /usr/share/logstash/config/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/logstash/config/</Config>
+  <Config Name="Host Key 14" Target="SYNLITE_SYSLOG_TEMPLATE_PATH" Default="" Mode="" Description="Container Variable: SYNLITE_SYSLOG_TEMPLATE_PATH" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/synesis_lite_syslog/templates</Config>
+  <Config Name="Host Key 15" Target="SYNLITE_SYSLOG_GROK_PATTERNS_DIR" Default="" Mode="" Description="Container Variable: SYNLITE_SYSLOG_GROK_PATTERNS_DIR" Type="Variable" Display="always" Required="false" Mask="false">/usr/share/logstash/config/synesis_lite_syslog/patterns</Config>
+  <Config Name="Host Key 16" Target="SYNLITE_SYSLOG_ES_HOST" Default="" Mode="" Description="Container Variable: SYNLITE_SYSLOG_ES_HOST" Type="Variable" Display="always" Required="false" Mask="false">elasticsearch7:9200</Config>
+  <Config Name="Host Key 17" Target="SYNLITE_SYSLOG_UDP_IPV4_PORT" Default="" Mode="" Description="Container Variable: SYNLITE_SYSLOG_UDP_IPV4_PORT" Type="Variable" Display="always" Required="false" Mask="false">10514</Config>
+  <Config Name="Host Key 18" Target="SYNLITE_SYSLOG_TCP_IPV4_PORT" Default="" Mode="" Description="Container Variable: SYNLITE_SYSLOG_TCP_IPV4_PORT" Type="Variable" Display="always" Required="false" Mask="false">10514</Config>
+</Container>
+
