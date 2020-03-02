@@ -14,12 +14,12 @@
   <Support></Support>
   <Description>Logstash - Logstash is a tool for managing events and logs. When used generically, the term encompasses a larger system of log collection, processing, storage and searching activities.</Description>
   <Project>https://www.elastic.co/logstash</Project>
-  <Overview>KLogstash is an open source, server-side data processing pipeline that ingests data from a multitude of sources simultaneously, transforms it, and then sends it to your favorite "stash."</Overview>
+  <Overview>Logstash is an open source, server-side data processing pipeline that ingests data from a multitude of sources simultaneously, transforms it, and then sends it to your favorite "stash."</Overview>
   <Repository>logstash-elastiflow:latest</Repository>
   <Registry/>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Icon>https://www.elastic.co/assets/blt946bc636d34a70eb/icon-logstash-bb.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/logstash.svg</Icon>
   <ExtraParams/>
   <Networking>
     <Mode>bridge</Mode>
