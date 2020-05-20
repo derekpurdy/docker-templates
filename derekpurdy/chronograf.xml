@@ -26,12 +26,12 @@
         <HostPort>8888</HostPort>
         <ContainerPort>8888</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>    
+      </Port>
     </Publish>
  </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/chronograf</HostDir>
       <ContainerDir>/var/lib/chronograf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
