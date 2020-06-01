@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+	<TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/matrix-dimension.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Network:Messenger</Category>
+<Date>2020-06-01</Date>
+<changes>
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2020.06.01[/font]
+- Initial release of the matrix-dimension template
+  </changes>  
+  <Name>matrix-dimension</Name>
+  <Support></Support>
+  <Description>An open source integration manager for matrix clients, like Riot. https://dimension.t2bot.io</Description>
+  <Project>https://github.com/turt2live/matrix-dimension</Project>
+  <Overview>An open source integration manager for matrix clients, like Riot. https://dimension.t2bot.io</Overview>
+  <Registry>https://hub.docker.com/r/turt2live/matrix-dimension</Registry>
+  <Repository>turt2live/matrix-dimension:latest</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8184</HostPort>
+        <ContainerPort>8184</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+ </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/matrix-dimension</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI>http://[IP]:[PORT:8184]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/matrix-dimension.png</Icon>
+<DonateText></DonateText>
+<DonateLink></DonateLink>
+<DonateImg></DonateImg>
+<BaseImage></BaseImage>
+</Container>
