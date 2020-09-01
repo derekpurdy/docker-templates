@@ -28,7 +28,7 @@
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
- </Networking>
+  </Networking>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/chronograf</HostDir>
