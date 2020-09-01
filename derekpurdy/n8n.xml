@@ -18,7 +18,7 @@
   <Repository>n8nio/n8n</Repository>
   <Registry>https://hub.docker.com/r/n8nio/n8n/</Registry>
   <Privileged>false</Privileged>
-  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/n8n.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/n8n.png</Icon>
   <ExtraParams/>
   <WebUI>http://[IP]:[PORT:5678]/</WebUI>
   <Networking>
