@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
 	<TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/chronograf.xml</TemplateURL>
-<Beta>False</Beta>
-<Category>Tools:System</Category>
-<Date>2020-02-13</Date>
-<changes>
-[center][font size=4]Change Log[/font][/center]
+  <Beta>False</Beta>
+  <Category>Tools:System</Category>
+  <Date>2020-02-13</Date>
+  <changes>
+  [center][font size=4]Change Log[/font][/center]
 
-[font size=3]2020.02.13[/font]
-- Initial release of the Chronograf template
+  [font size=3]2020.02.13[/font]
+  - Initial release of the Chronograf template
   </changes>  
   <Name>Chronograf</Name>
   <Support></Support>
@@ -36,10 +36,10 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-<WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/chronograf.png</Icon>
-<DonateText></DonateText>
-<DonateLink></DonateLink>
-<DonateImg></DonateImg>
-<BaseImage></BaseImage>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <BaseImage></BaseImage>
 </Container>

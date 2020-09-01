@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
 	<TemplateURL>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/matrix-dimension.xml</TemplateURL>
-<Beta>False</Beta>
-<Category>Network:Messenger</Category>
-<Date>2020-06-01</Date>
-<changes>
-[center][font size=4]Change Log[/font][/center]
+  <Beta>False</Beta>
+  <Category>Network:Messenger</Category>
+  <Date>2020-06-01</Date>
+  <changes>
+  [center][font size=4]Change Log[/font][/center]
 
-[font size=3]2020.06.01[/font]
-- Initial release of the matrix-dimension template
+  [font size=3]2020.06.01[/font]
+  - Initial release of the matrix-dimension template
   </changes>  
   <Name>matrix-dimension</Name>
   <Support></Support>
@@ -36,10 +36,10 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-<WebUI>http://[IP]:[PORT:8184]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8184]/</WebUI>
   <Icon>https://raw.githubusercontent.com/derekpurdy/docker-templates/master/derekpurdy/img/matrix-dimension.png</Icon>
-<DonateText></DonateText>
-<DonateLink></DonateLink>
-<DonateImg></DonateImg>
-<BaseImage></BaseImage>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <BaseImage></BaseImage>
 </Container>
